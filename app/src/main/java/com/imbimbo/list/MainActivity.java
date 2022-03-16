@@ -22,12 +22,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper db;
-
     Button add_data;
     EditText add_name;
-
     ListView userlist;
-
     ArrayList<String> listItem;
     ArrayAdapter adapter;
 
@@ -68,19 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-        private void viewData(){
-            Cursor cursor = db.viewData();
+    private void viewData(){
+        Cursor cursor = db.viewData();
 
-            if (cursor.getCount() == 0){
-                Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
-            } else {
-                while (cursor.moveToNext()) {
-                    listItem.add(cursor.getString(1));
-                }
-                adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
-                userlist.setAdapter(adapter);
+        if (cursor.getCount() == 0){
+            Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
+        } else {
+            while (cursor.moveToNext()) {
+                listItem.add(cursor.getString(1));
             }
+            adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
+            userlist.setAdapter(adapter);
         }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

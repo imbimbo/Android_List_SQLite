@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/f_imb/Desktop/CTESP/PDM Android/List/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/f_imb/Desktop/CTESP/PDM Android/List/app/src/main/res/layout/activity_delete.xml" value="0.33" />
+        <entry key="..\:/Users/f_imb/Desktop/CTESP/PDM Android/List/app/src/main/res/layout/activity_delete_item.xml" value="0.25" />
+        <entry key="..\:/Users/f_imb/Desktop/CTESP/PDM Android/List/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/f_imb/Desktop/CTESP/PDM Android/List/app/src/main/res/menu/menu.xml" value="0.33" />
       </map>
     </option>
